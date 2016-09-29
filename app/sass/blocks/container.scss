@@ -1,0 +1,12 @@
+.container {
+	margin: 0 auto;
+	min-width: 300px;
+	padding: 0 10px;
+	@include clearfix();
+	
+	// ----- Media queries -----
+	
+	@media (min-width: $screen-lg) {
+		width: 1180px;
+	}
+}

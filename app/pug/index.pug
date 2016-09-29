@@ -1,0 +1,194 @@
+extends templates/main.pug
+
+block title
+	title Title
+
+block content
+	.main-wrapper
+		header.page-header
+			.page-header__menu
+				ul.page-header__menu-list
+					li.page-header__menu-item
+						a.page-header__menu-link.page-header__menu-link--log-in(href="#") Log in
+					li.page-header__menu-item
+						a.page-header__menu-link.page-header__menu-link--sign-up(href="#") Sign up
+				h1.page-header__logo
+					a.page-header__logo-link(href="index.html") URLAUBSGLÜCK
+			.page-header__title.
+				Share your holiday dreams
+			.page-header__sub.
+				And find the perfect partner to fullfill it
+			.page-header__action
+				a.page-header__action-link(href="#")
+					span.page-header__action-link-inner Find your holiday partner
+		section.intro
+			.container
+				.intro__title How Urlaubsglück works?
+				.intro__sliders-wrap
+					.intro__slider
+						.intro__slider-inner.slider__wrap
+							ul.intro__slider-list.slider__slides
+								li.intro__slider-item(data-image="slider-1.jpg")
+									.intro__slider-text
+										.intro__slider-step step 1
+										.intro__slider-title Sed leo enim, condimentum
+										.intro__slider-desc Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+								li.intro__slider-item(data-image="slider-1.jpg")
+									.intro__slider-text
+										.intro__slider-step step 1
+										.intro__slider-title Lorem ipsum
+										.intro__slider-desc Quisque libero libero, dictum non turpis in, luctus semper lorem!
+								li.intro__slider-item(data-image="slider-1.jpg")
+									.intro__slider-text
+										.intro__slider-step step 1
+										.intro__slider-title Quis nostrud exercitation
+										.intro__slider-desc Quisque libero libero, dictum non turpis in, luctus semper lorem! Excepteur sint occaecat cupidatat.
+							ul.intro__slider-nav-list
+								li.intro__slider-nav-item.intro__slider-nav-item--prev
+									a.intro__slider-nav-link.intro__slider-nav-link--prev.slider__prev(href="#")
+								li.intro__slider-nav-item.intro__slider-nav-item--next
+									a.intro__slider-nav-link.intro__slider-nav-link--next.slider__next(href="#")
+					.intro__slider
+						.intro__slider-inner.slider__wrap
+							ul.intro__slider-list.slider__slides
+								li.intro__slider-item(data-image="slider-2.jpg")
+									.intro__slider-text
+										.intro__slider-step step 2
+										.intro__slider-title Morbi velit risus
+										.intro__slider-desc Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+								li.intro__slider-item(data-image="slider-2.jpg")
+									.intro__slider-text
+										.intro__slider-step step 2
+										.intro__slider-title Reprehenderit in voluptate velit
+										.intro__slider-desc Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.
+								li.intro__slider-item(data-image="slider-2.jpg")
+									.intro__slider-text
+										.intro__slider-step step 2
+										.intro__slider-title Duis aute irure dolor
+										.intro__slider-desc Laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur.
+							ul.intro__slider-nav-list
+								li.intro__slider-nav-item.intro__slider-nav-item--prev
+									a.intro__slider-nav-link.intro__slider-nav-link--prev.slider__prev(href="#")
+								li.intro__slider-nav-item.intro__slider-nav-item--next
+									a.intro__slider-nav-link.intro__slider-nav-link--next.slider__next(href="#")
+					.intro__slider
+						.intro__slider-inner.slider__wrap
+							ul.intro__slider-list.slider__slides
+								li.intro__slider-item(data-image="slider-3.jpg")
+									.intro__slider-text
+										.intro__slider-step step 3
+										.intro__slider-title Donec rhoncus a leo sit
+										.intro__slider-desc Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.
+								li.intro__slider-item(data-image="slider-3.jpg")
+									.intro__slider-text
+										.intro__slider-step step 3
+										.intro__slider-title Lorem ipsum dolor sit amet!
+										.intro__slider-desc Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+								li.intro__slider-item(data-image="slider-3.jpg")
+									.intro__slider-text
+										.intro__slider-step step 3
+										.intro__slider-title Essecillum
+										.intro__slider-desc Duis aute irure dolor in reprehenderit in voluptate velit essecillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+							ul.intro__slider-nav-list
+								li.intro__slider-nav-item.intro__slider-nav-item--prev
+									a.intro__slider-nav-link.intro__slider-nav-link--prev.slider__prev(href="#")
+								li.intro__slider-nav-item.intro__slider-nav-item--next
+									a.intro__slider-nav-link.intro__slider-nav-link--next.slider__next(href="#")
+		section.partners
+			.container
+				.partners__title Meet a partner for your best holiday!
+				ul.partners__list
+					li.partners__item
+						.partners__pic
+							.partners__image-wrap
+								img.partners__image(src="img/portrait-1.jpg")
+							.partners__icon.partners__icon--tv
+						.partners__name Bradley Hunter
+						.partners__desc.
+							Based in Chicago. I love playing tennis and loud music.
+					li.partners__item
+						.partners__pic
+							.partners__image-wrap
+								img.partners__image(src="img/portrait-2.jpg")
+							.partners__icon.partners__icon--lab
+						.partners__name Lucas Marsha
+						.partners__desc.
+							I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.
+					li.partners__item
+						.partners__pic
+							.partners__image-wrap
+								img.partners__image(src="img/portrait-3.jpg")
+							.partners__icon.partners__icon--cofee
+						.partners__name Heather Walker
+						.partners__desc.
+							I'm a happy person that loves cats and climbing on mountains.
+					li.partners__item
+						.partners__pic
+							.partners__image-wrap
+								img.partners__image(src="img/portrait-4.jpg")
+							.partners__icon.partners__icon--plain
+						.partners__name Ann James
+						.partners__desc.
+							I like music and travels!
+				.partners__other
+					a.partners__other-link(href="#") See other partners
+		section.activity
+			.container
+				.activity__title Discover holiday activity ideas
+				ul.activity__list
+					li.activity__item.activity__item--1(data-image="pic-1.jpg")
+						.activity__overlay
+						.activity__desc Sport and Activity
+					li.activity__item.activity__item--2(data-image="pic-2.jpg")
+						.activity__overlay
+						.activity__desc Wellnes and Health
+					li.activity__item.activity__item--3(data-image="pic-3.jpg")
+						.activity__overlay
+						.activity__desc Extreme Sports and Expeditions
+					li.activity__item.activity__item--4(data-image="pic-4.jpg")
+						.activity__overlay
+						.activity__desc Games
+					li.activity__item.activity__item--5(data-image="pic-5.jpg")
+						.activity__overlay
+						.activity__desc Culture and Education
+					li.activity__item.activity__item--6(data-image="pic-6.jpg")
+						.activity__overlay
+						.activity__desc Relaxation
+					li.activity__item.activity__item--7(data-image="pic-7.jpg")
+						.activity__overlay
+						.activity__desc Travelling
+		section.search
+			.container
+				.search__title Discover holiday activity ideas
+				.search__sub Hi! What are your holiday interests?
+				form.search__form(method="post")
+					.search__form-group
+						input.search__field(type="text" name="search-text" placeholder="Enter your interests")
+					.search__form-group
+						button.search__submit(type="submit") Search partners
+	footer.page-footer
+		.container
+			.page-footer__content
+				.page-footer__logo
+					a.page-footer__logo-link(href="index.html") URLAUBSGLÜCK
+				.page-footer__section
+					.page-footer__section-title Company
+						ul.page-footer__section-list
+							li.page-footer__section-item
+								a.page-footer__section-link(href="#") About
+							li.page-footer__section-item
+								a.page-footer__section-link(href="#") Contacts
+							li.page-footer__section-item
+								a.page-footer__section-link(href="#") Press
+							li.page-footer__section-item
+								a.page-footer__section-link(href="#") Blog
+				.page-footer__section
+					.page-footer__section-title Partners
+						ul.page-footer__section-list
+							li.page-footer__section-item
+								a.page-footer__section-link(href="#") ECCO
+							li.page-footer__section-item
+								a.page-footer__section-link(href="#") ARETO
+				.page-footer__design
+					.page-footer__design-text Designed By
+					img.page-footer__design-logo(src="img/design-logo.png")

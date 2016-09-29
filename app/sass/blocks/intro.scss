@@ -1,0 +1,169 @@
+.intro {
+	padding-top: 36px;
+}
+.intro__title {
+	margin-bottom: 10px;
+	font-family: $montserrat-bold;
+	font-size: $title-main;
+	color: $main-black;
+	text-align: center;
+}
+.intro__sliders-wrap {
+	font-size: 0;
+}
+.intro__slider {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 240px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.intro__slider-inner {
+	height: 100%;
+}
+.intro__slider-list {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	white-space: nowrap;
+
+}
+.intro__slider-item {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	white-space: normal;
+}
+.intro__slider-text {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 0 60px;
+}
+.intro__slider-step {
+	display: inline-block;
+	margin-bottom: 16px;
+	padding: 6px 20px;
+	font-family: $montserrat-regular;
+	font-size: $text-main;
+	color: #fff;
+	background-color: $main-red;
+	border-radius: 30px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+.intro__slider-title {
+	font-family: $montserrat-bold;
+	font-size: $title-l;
+	color: #fff;
+	margin-bottom: 16px;
+}
+.intro__slider-desc {
+	font-family: $roboto-light;
+	font-size: $text-main;
+	color: #cccccc;
+	margin-bottom: 16px;
+}
+.intro__slider-nav-list {
+	@include clearfix();
+	position: absolute;
+	height: 36px;
+	top: 50%;
+	width: 100%;
+	margin: -36px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+.intro__slider-nav-item {
+	width: 30px;
+	height: 56px;
+}
+.intro__slider-nav-item--prev {
+	float: left;
+	margin-left: 10px;
+}
+.intro__slider-nav-item--next {
+	float: right;
+	margin-right: 10px;
+}
+.intro__slider-nav-link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url("../img/sprite.png");
+	&--prev {
+		background-position: 0 0;
+		&:hover {
+			background-position: 0 -57px;
+		}
+	}
+	&--next {
+		background-position: -33px 0;
+		&:hover {
+			background-position: -33px -57px;
+		}
+	}
+}
+
+// ======== Media queries ========
+
+@media (min-width: $screen-xs) {
+	.intro__sliders-wrap {
+		text-align: center;
+	}
+	.intro__slider {
+		height: 340px;
+		max-width: 600px;
+	}
+	.intro__slider-text {
+		width: 100%;
+		text-align: center;
+		vertical-align: middle;
+	}
+}
+@media (min-width: $screen-sm) {
+	.intro {
+		margin-bottom: 40px;
+	}
+	.intro__title {
+		margin-bottom: 30px;
+	}
+	.intro__sliders-wrap {
+		text-align: center;
+		text-align: justify;
+		&:after {
+			display: inline-block;
+			width: 100%;
+			height: 0;
+			content: "";
+		}
+	}
+	.intro__slider {
+		display: inline-block;
+		width: 32%;
+		height: 400px;
+	}
+	.intro__slider-text {
+		padding: 0 10px;
+		text-align: left;
+	}
+	.intro__slider-nav-list {
+		top: 0;
+		margin-top: 36px;
+	}
+}
+@media (min-width: $screen-md) {
+	.intro__slider-nav-list {
+		top: 50%;
+		margin-top: -36px;
+	}
+	.intro__slider-text {
+		padding: 0 60px;
+	}
+}
