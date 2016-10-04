@@ -69,6 +69,7 @@
 
 @media (min-width: $screen-sm) {
 	.page-footer__content {
+		text-justify: distribute;
 		text-align: justify;
 		padding-top: 30px;
 		&:after {
